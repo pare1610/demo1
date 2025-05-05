@@ -13,30 +13,30 @@ public class UserBitrix {
     @Column(name = "IDSQL") // Especifica el nombre de la columna en la base de datos
     private Long idSql;
 
-    @Column(name = "ID") // Especifica el nombre de la columna en la base de datos
-    @JsonProperty("ID") // Si el JSON de Bitrix24 usa "ID"
-    private String idBitrix;
+    @Column(name = "id") // Especifica el nombre de la columna en la base de datos
+    @JsonProperty("id") // Si el JSON de Bitrix24 usa "ID"
+    private String id;
 
-    @Column(name = "NAME") // Especifica el nombre de la columna en la base de datos
-    @JsonProperty("NAME") // Si el JSON de Bitrix24 usa "NAME"
-    private String nombre;
+    @Column(name = "name") // Especifica el nombre de la columna en la base de datos
+    @JsonProperty("name") // Si el JSON de Bitrix24 usa "NAME"
+    private String name;
 
-    @Column(name = "LAST_NAME") // Especifica el nombre de la columna en la base de datos
-    @JsonProperty("LAST_NAME") // Si el JSON de Bitrix24 usa "LAST_NAME"
-    private String apellido;
+    @Column(name = "last_name") // Especifica el nombre de la columna en la base de datos
+    @JsonProperty("last_name") // Si el JSON de Bitrix24 usa "LAST_NAME"
+    private String last_name;
 
-    @Column(name = "EMAIL") // Especifica el nombre de la columna en la base de datos
-    @JsonProperty("EMAIL") // Si el JSON de Bitrix24 usa "EMAIL"
+    @Column(name = "email") // Especifica el nombre de la columna en la base de datos
+    @JsonProperty("email") // Si el JSON de Bitrix24 usa "EMAIL"
     private String email;
 
     // Constructores (sin argumentos y con argumentos)
     public UserBitrix() {
     }
 
-    public UserBitrix(String idBitrix, String nombre, String apellido, String email) {
-        this.idBitrix = idBitrix;
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public UserBitrix(String id, String name, String last_name, String email) {
+        this.id = id;
+        this.name = name;
+        this.last_name = last_name;
         this.email = email;
     }
 
@@ -45,16 +45,16 @@ public class UserBitrix {
         return idSql;
     }
 
-    public String getIdBitrix() {
-        return idBitrix;
+    public String getId() {
+        return id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getLast_name() {
+        return last_name;
     }
 
     public String getEmail() {
@@ -66,16 +66,16 @@ public class UserBitrix {
         this.idSql = idSql;
     }
 
-    public void setIdBitrix(String idBitrix) {
-        this.idBitrix = idBitrix;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public void setEmail(String email) {
